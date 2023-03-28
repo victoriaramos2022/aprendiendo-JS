@@ -1,0 +1,29 @@
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+
+    font-size: 25px;
+}
+
+div{
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+    background: lightgray;
+}
+
+.caja2{
+    background: lightskyblue;
+}
+
+@media only screen and (max-width: 800px){
+    div{
+        display: block;
+        width: 100%;
+
+    }
+}
+ 
+
+    

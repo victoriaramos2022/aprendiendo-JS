@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: hotpink;
+    display: inline-block; /*para alinearlas*/
+    padding: 100px;
+    box-sizing: border-box; /*para que el padding no se le sume al height y el with*/
+    text-align: center;
+    margin: 20px, 10px;
+    border-radius: 50px; /* para redibdear*/
+    border: 10px inset rgb(186, 108, 108);
+    box-shadow: 30px 20px 10px 10px lightpink; /* sombra a la caja*/
+    text-shadow: 2px 2px 7px lavender; /*sombra al texto*/
+    transform: rotate(-10deg);
+}
+
+
+
+
+/*OUTLINE ES UNA propiedad para reducir codigo, es un boder sin afectar a las cajas no ocupa espacio real*/
+/*no afeta al DOM*/
+/*EJEMPPLO DE OUTLINE: para marca elementos*/
+/*nos puedes servir*/
+
+.caja1{
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    margin: auto; /* lo centra, el navegador hace un calculo automatico de 50 y 50*/
+    /*border: 10px solid blueviolet;*/
+    outline: 10px solid blueviolet; /*si podemos el outline no mueve la siguiente caja, marcan el objero*/
+    box-sizing: content-box; /*si tengo 200px + 10px del borde serian 220x220*/
+
+
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin: auto;
+}
+
+/*Position lo que hace es que posiciona las propiedades
+AFECTA EL FLUIYO HTML: el orden en el que ponemos los elemntos
+ESTATIC= es el valor por defecto
+RELATIVE= hacemos que la position se conserve, aparentemente no se mueve se ocupa TOP Y LEFT
+Z-INDEX SOLO funciona cuando las cajas estan pocisionadas
+por ejemplo si no tiene position, la caja se pone sobre la otra
+con Z-INDEX de pone detras de la otra caja, tiene que haber un position 
+*/
+
+
+.caja3{
+    background-color: blue;
+}
+
+.caja4{
+    background-color: green;
+    position: relative; /* hacemos que adquiera 4 propiedades top left right and botoom*/
+    top: 60px;
+    left: 25px;
+}
+
+.caja5{
+    background-color: red;
+    position: relative; /* hacemos que adquiera 4 propiedades top left right and botoom*/
+}
+
+.caja6{
+    background-color: greenyellow;
+}
+
+/*POSITION ABSOLUTE
+2 DIFERENCIAS QUE CAMBIAN
+el elemento ya no esta reservado y si hay 3 cajas sube1*/
+/*Viewport es todo lo que podemos ver la pantalla blnaca */
+
+/*Las capas o elementos con posicionamiento absoluto quedan aparte del flujo normal 
+del HTML, quiere decir esto que no se afectan por el lugar donde aparezcan 
+en el código HTML y tampoco afectan ellas a otros elementos que sí que formen 
+parte del flujo normal del HTML.*/
+
+/*con position absolute, se pocisiona al valor del contendio*/
+
+.caja7{
+    background-color: blue;
+}
+
+.caja8{
+    background-color: green;
+    position: absolute;
+    opacity: 0.4; /*Opacidad, la trasnparecica va de 0-1 0.1 0.2 0.3 etc*/
+    margin-left:  300px;
+  
+}
+
+.caja9{
+    background-color: red;
+    
+}
+
+div{
+    display: block;
+    position: absolute;
+    background: tomato;
+   
+   
+}
+
+div div{
+    width: 100px;
+    height: 100px;
+    background: lightsalmon;
+}
+.contenedor{
+    position: relative;
+    border: 4px solid red;
+    margin: 50px auto; /*solo funciona verticalmente*/
+    width: 450px;
+    height: 450px;
+}
+
+  
+.caja10{
+    left: 0;
+}
+
+.caja11{
+    
+  right: 0;
+
+  
+}
+
+.caja12{
+    bottom:0 ;
+}
+
+.caja13{
+    right: 0;
+    bottom:0 ;
+}
+
+.caja14{
+    bottom:0 ;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+

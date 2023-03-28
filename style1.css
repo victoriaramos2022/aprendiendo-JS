@@ -1,0 +1,150 @@
+
+/*FIXED  se queja fijo */
+*{
+    font-size: 20px;
+    font-family:  'Montserrat Alternates', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;;
+}
+.caja-fixed{
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+}
+
+/*STYCKY lo que hace es mantener el espacio en la pag, 
+lo conserva*/
+
+/*DISPLAY
+MODIFICA el comportamiento de las cajas
+
+BLOCK una debajo de la otra, si se puede cambiar
+INLINE para texto,se ponen en linea, no se modifica alto ni ancho
+
+INLINE-BLOCK solo podes modificar los alto y ancho
+y poner un elemento a la parde otro 
+INLINE-BLOCK se pone una a la par de otra, uno al lado de otro
+
+FLEX
+GRID
+
+
+INLINE-FLEX
+INLINE-GRIDD*/
+
+
+/*OVERFLOW es el scroll, lo que sobra */
+
+/*FLOAT
+float ubica un elemento al lado izquierdo o derecho */
+.contenedor1{
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid yellowgreen;
+    background: lightblue;
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.contenedor1 img{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+
+/*PSEUDO-ELEMENTO NO FORMAN parte del DOM no sirven en inline solo en block*/
+
+.texto{
+    padding: 20px;
+
+}
+/*firt line se refiere a la primeea linea*/
+.texto::first-line{
+    color: blueviolet;
+    font-size: 2em;
+}
+
+.texto::first-letter{
+    color: turquoise;
+    font-size: 5em;
+}
+/* estas 2 si forman parte del DOM SOLO ES EN BLOCK*/
+
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: beige;
+    padding: 100px;
+    width: 50%;
+}
+
+inpunt{
+    padding: 6px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: blueviolet;
+}
+
+input::selection{
+    color: aqua;
+    background-color: blueviolet;
+}
+
+/*AFETER Y BEfore no forman parte del DOM, y son elementos en linea
+BEFORE que es? y AFTER con contentr podemos agregra contenido*/
+
+
+
+/*PSEUDO-CLASE escucha */
+
+.caja1{
+    height: 200px;
+    width: 200px;
+    background-color: darksalmon;
+    transition: all 1s;
+}
+
+.caja1:hover{
+    background: lightskyblue;
+    height: 300px;
+    width: 300px;
+}
+
+/*con hover tambien para botones*/
+button{
+    padding: 20px;
+    background-color: aquamarine;
+    color: black;
+}
+
+button:hover{
+    padding: 20px;
+    background-color: lightgrey;
+    color: black;
+}
+
+/*LINK para los a para que mientras no este abierot se ponga de un color
+y cuando ya este abierto de otro color */
+
+
+/*active*/
+
+.caja2{
+    width: 250px;
+    height: 250px;
+    background: red;
+    margin: 25px;
+    transition: all 1s;
+}
+
+.caja2:active{
+    background: blue;
+    width: 500px;
+}
+
+/*FOCUS FUNCIONA Solo con inputs, cuadno tenemos el elemento sellecionado*/
+/*lang para modificar el indioma pero se debe poneer (en) el lidioma*/
